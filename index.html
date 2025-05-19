@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minidonas 🍩 | Venta en el Insti</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-donate me-2"></i>Minidonas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formulario">Sugerencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://wa.me/[TU_NÚMERO]"><i class="fab fa-whatsapp"></i> Pedidos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-gradient">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">¡Minidonas Caseras!</h1>
+            <p class="lead">Delicias a solo <span class="badge bg-warning text-dark">S/1.00 c/u</span></p>
+            <a href="#productos" class="btn btn-light btn-lg mt-3">Ver Catálogo</a>
+        </div>
+    </header>
+
+    <!-- Catálogo de Productos -->
+    <section id="productos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestras Minidonas 🍩</h2>
+            <div class="row g-4" id="catalogo">
+                <!-- Las tarjetas se generan con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Sugerencias -->
+    <section id="formulario" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h3 class="text-center mb-4">¡Déjanos tu opinión!</h3>
+                            <form id="sugerenciasForm">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sugerencia" class="form-label">Sugerencia</label>
+                                    <textarea class="form-control" id="sugerencia" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-orange w-100">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2024 Minidonas - Venta en el Instituto</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/[TU_NÚMERO]" class="text-white"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

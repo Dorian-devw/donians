@@ -1,0 +1,64 @@
+:root {
+    --orange: #FF8C42;
+    --dark-orange: #E86A33;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-orange {
+    background-color: var(--orange) !important;
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: var(--dark-orange);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--orange), #FFB347);
+    color: white;
+    padding: 100px 0;
+}
+
+/* Efecto hover para las tarjetas de producto */
+.card-producto {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+
+.card-producto img {
+    transition: all 0.5s ease;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-producto .info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.card-producto:hover .info {
+    bottom: 0;
+}
+
+.card-producto:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
